@@ -5,9 +5,14 @@
 // devolver el string 'Debo ser ejecutada con un numero'
 
 // Ha de pasar los test adjuntados.
-let convierteString = (numero) => {
+function convierteString (numero){
     // Aquí tu código.  Desde aquí:
-
+    if (numero !== 'number'){
+        return 'Debo ser ejecutada con un numero'
+    } else {
+        var cadena = String(numero) 
+        return cadena
+    }
     
     // Hasta aquí.
 }

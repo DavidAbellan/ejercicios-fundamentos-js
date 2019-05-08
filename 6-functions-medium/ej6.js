@@ -6,20 +6,58 @@
 // debe devolver el string 'Debo ser ejecutada con un array'
 // puedes comprobar si es un array con:
 //  typeof array === 'object' && array.length >= 0
+for ( var i = 0; i < 6 ; i++){
+       var linea = '';
+    for (var j = 6; j > i; j-- ){
+       
+        linea +='*';
+    }
+    console.log(linea)
+    
+}
+
+////o
+var numeroLineas = 6;
+for(var i = 0; i<numeroLineas;i++){
+    console.log('*'.repeat(numeroLineas-i))
+}
+
+
 
 
 // Ha de pasar los test adjuntados.
 
 let transformaArrayEnOtraConSusLongitudes = (arrayDeStrings) => {
     let arrayDeLongitudes = [];
+    
     // Aquí tu código.  Desde aquí:
+    if (typeof arrayDeStrings === 'object' && arrayDeStrings.length >= 0) {
+        
+        for (var item of arrayDeStrings) {
+            var contador = 0;
+            for (var i=0 ;  i<item.length ; i++) {
+
+               
+                    contador ++;
+                
+
+
+            }
+            arrayDeLongitudes.push(contador)
+        }
+    } else {
+        return ('Debo ser ejecutada con un array')
+    }
 
     // Hasta aquí.
     return arrayDeLongitudes
 }
 
 
+
+
 let test = require('../test.js');
+
 test(transformaArrayEnOtraConSusLongitudes, [
     ['juan', 'paco', 'pepe']
 ], [4, 4, 4]);

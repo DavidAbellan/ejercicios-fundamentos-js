@@ -7,9 +7,17 @@
 // Ha de pasar los test adjuntados.
 
 let cuentaCaracteres = (texto) => {
+    numeroLetras=0;
     // Aquí tu código.  Desde aquí:
-   
-    
+    if (texto !== 'string'){
+        return 'Debo ser ejecutada con un string'
+    } else {
+       for (var letra of texto){
+         numeroLetras ++;
+       }
+         
+    }
+    return numeroLetras;
     // Hasta aquí.
 }
 
