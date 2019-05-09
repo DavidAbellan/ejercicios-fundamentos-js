@@ -9,6 +9,7 @@
 // 
 // utilizar un bucle for of
 
+
 // Ha de pasar los test adjuntados.
 
 let extraerAcronimo = function() {

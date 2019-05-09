@@ -35,3 +35,9 @@ let gente = [{
     },
 ]
 
+var nombresJMenores40 = function(n) {
+    return n.nombre[0] === "J" && n.edad < 40
+
+}
+var solucion = gente.filter(nombresJMenores40);
+console.log(solucion);

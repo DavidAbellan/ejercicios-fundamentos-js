@@ -33,3 +33,10 @@ let gente = [{
         edad: 10
     },
 ]
+var mayores25 = function (p){
+    return p.edad > 25;
+}
+
+var resultado = gente.filter(mayores25)
+
+console.log (resultado)

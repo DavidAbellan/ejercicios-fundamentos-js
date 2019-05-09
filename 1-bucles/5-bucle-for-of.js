@@ -33,3 +33,9 @@ let gente = [{
         edad: 10
     },
 ]
+var nombresJMenores40 = function(n) {
+    return n.nombre[0] === "J"
+
+}
+var solucion = gente.filter(nombresJMenores40);
+console.log(solucion);

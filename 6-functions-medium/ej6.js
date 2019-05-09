@@ -6,6 +6,24 @@
 // debe devolver el string 'Debo ser ejecutada con un array'
 // puedes comprobar si es un array con:
 //  typeof array === 'object' && array.length >= 0
+
+var arrayLongitud = function (p){
+    return p.length;
+}
+
+if (typeof arrayLongitud === 'object' && arrayLongitud.length >= 0) {
+    var resultado = longitud.filter(arrayLongitud);
+    
+
+} else { return ('Debo ser ejecutada con un array')}
+
+
+console.log(resultado);
+
+
+
+
+
 for ( var i = 0; i < 6 ; i++){
        var linea = '';
     for (var j = 6; j > i; j-- ){
@@ -15,6 +33,8 @@ for ( var i = 0; i < 6 ; i++){
     console.log(linea)
     
 }
+
+
 
 ////o
 var numeroLineas = 6;

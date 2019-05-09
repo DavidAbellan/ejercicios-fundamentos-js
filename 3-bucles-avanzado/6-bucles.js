@@ -15,8 +15,14 @@ for (let i = 0; i < giveMeIntegerRandom(10); i++) {
 }
 console.log('El array original es:  arr =', arr);
 // Aquí tu código
+var multiplicaX2 = function (n){
+    return n * 2;
 
+}
 
+var dobleArr = arr.map(multiplicaX2);
+
+console.log (dobleArr)
 
 
 // Hasta aquí

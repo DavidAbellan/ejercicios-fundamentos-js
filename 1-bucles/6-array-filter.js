@@ -3,6 +3,9 @@
 // utilizando el método filter de los arrays
 // y muéstralo por consola.
 
+
+
+
 let gente = [{
         nombre: 'Jamiro',
         edad: 45
@@ -33,3 +36,11 @@ let gente = [{
     },
 ]
 
+var menosDeCuatro = function(n){
+    
+   return n.nombre.length < 5; 
+}
+
+var resultado = gente.filter(menosDeCuatro)
+
+console.log(resultado);
