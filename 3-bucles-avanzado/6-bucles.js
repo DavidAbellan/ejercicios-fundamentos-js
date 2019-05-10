@@ -25,6 +25,14 @@ var dobleArr = arr.map(multiplicaX2);
 console.log (dobleArr)
 
 
+
+var dobleArr = [];
+for (var numero of arr){
+   dobleArr.push(numero * 2);
+
+}
+
+
 // Hasta aquí
 console.log('El array nuevo es:  doubleArr =', dobleArr);
 // TEST 1

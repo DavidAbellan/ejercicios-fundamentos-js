@@ -40,3 +40,12 @@ var mayores25 = function (p){
 var resultado = gente.filter(mayores25)
 
 console.log (resultado)
+
+
+var mayoresde25 = [];
+for (i = 0; i < gente.length ;i++){
+       if (gente[i].edad > 25) {
+           mayoresde25.push(gente [i]);
+           console.log(mayoresde25[i]);
+       } 
+}

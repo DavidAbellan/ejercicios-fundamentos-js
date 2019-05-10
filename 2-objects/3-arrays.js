@@ -5,6 +5,18 @@
 
 
 // Aquí tu código
+var arr = [objeto = {
+    name: 'pepito',
+    age: 25,
+}, objeto2 = {
+    name:'pepito',
+    age: 36,
+}, objeto3 = {
+    age: 35,
+    name: 'José'
+}]
+
+
 
 
 // Hasta aquí

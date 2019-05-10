@@ -44,3 +44,16 @@ var menosDeCuatro = function(n){
 var resultado = gente.filter(menosDeCuatro)
 
 console.log(resultado);
+
+var genteCuatroLetras = [];
+var i = 0;
+ 
+do {
+    if (gente[i].nombre.length == 4){
+        genteCuatroLetras.push(gente[i]);
+        console.log(gente[i]);
+    }
+    i++;
+    
+   }while( i < gente.length )
+

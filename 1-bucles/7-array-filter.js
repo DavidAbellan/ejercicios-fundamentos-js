@@ -41,3 +41,11 @@ var nombresJMenores40 = function(n) {
 }
 var solucion = gente.filter(nombresJMenores40);
 console.log(solucion);
+var nuevoArray=[];
+for (var i = 0; i<gente.length; i++){
+    if ( gente[i].edad < 40 && gente[i].nombre[0]== "J" ){
+        nuevoArray.push(gente[i]);
+        console.log(gente[i]);
+
+    }
+}
